@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --clr-very-dark-magenta: hsl(300, 43%, 22%);
+    --clr-soft-pink: hsl(333, 80%, 67%);
+    --clr-dark-grayish-magenta: hsl(303, 10%, 53%);
+    --clr-light-grayish-magenta: hsl(300, 24%, 96%);
+    --clr-White: hsl(0, 0%, 100%);
+
+    --font-normal: 'League Spartan', sans-serif;
+    --font-medium: 500;
+    --font-bold: 700;
+}
+
+/*Mobile 375x667*/
+
+* {box-sizing: border-box;}
+
+body {margin: 0;
+      font-size: 15px;
+      font-family: var(--font-normal);}
+
+main {padding-inline: 1.5rem;}
+
+div.row {display: flex;
+         flex-direction: column;}
+
+h1 {text-align: center;
+    color: var(--clr-very-dark-magenta);
+    margin-top: 4rem;
+    line-height: 25px;
+    letter-spacing: 0;
+    font-weight: var(--font-bold);
+    font-size: 2rem;}
+
+
+p {color: var(--clr-dark-grayish-magenta);
+   font-weight: var(--font-medium);
+   text-align: center;
+   font-size: 16px;}
+
+h1 ~ p {margin-bottom: 1.5rem;
+        width: 300px;
+        margin-inline: auto;}
+
+div#stats {display: flex;
+           flex-direction: column;
+           row-gap: .75rem;
+           margin-block: .5rem 2rem;}
+
+div.stat {background-color: var(--clr-light-grayish-magenta);
+          border-radius: .5rem;
+          padding-block: .75rem;
+          text-align: center;
+          color: var(--clr-very-dark-magenta);
+          font-weight: var(--font-bold);}
+
+div.stars {display: flex;
+           justify-content: center;
+           column-gap: .3rem;
+           margin-bottom: .5rem;}
+
+div.review {background-color: var(--clr-very-dark-magenta);
+            padding: 1.5rem;
+            border-radius: .5rem;
+            margin-block: .5rem}
+
+span.name {color: var(--clr-White);
+           font-weight: var(--font-bold);
+           font-size: 16px;}
+
+span.accent {display: block;
+             color: var(--clr-soft-pink);
+             font-weight: var(--font-normal);}
+
+div.review p {color: var(--clr-White);
+              text-align: left;
+              font-weight: var(--font-normal);
+              word-spacing: 1px;
+              line-height: 130%;
+              width: 265px;
+              margin-bottom: 0;}
+
+div.head {display: flex;
+          column-gap: 1.5rem;
+          padding-block: 1rem .5rem;
+          align-items: center;}
+
+div.head img {border-radius: 3rem;
+              height: 36px;}
+
+.attribution {font-size: 11px;
+              text-align: center;}
+
+.attribution a {color: hsl(228, 45%, 44%);}
+
+footer {margin-block: .5rem;}
+
+/*Desktop 1440x800*/
+@media (min-width: 1440px){
+
+    body {background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+          background-repeat: no-repeat, no-repeat;
+          background-position-x: 0%, right;
+          background-position-y: 0%, 55%;
+          height: 100vh;}
+
+    div.row{margin: 8rem 10.5rem;}
+
+    div.row:first-of-type {display: flex;
+                           flex-direction: row;
+                           margin-block: 7rem 1.5rem;}
+
+    div.row:first-of-type p {text-align:left;
+                             width: 450px;
+                             line-height: 130%;
+                             font-weight: var(--font-medium);
+                             font-size: 18px;}
+
+    div.row:first-of-type > div:last-of-type {width: 100%;}
+
+    div.stat {display: flex;
+              column-gap: 2rem;
+              padding-inline: 1.5rem 2rem;
+              width: 425px;
+              align-items: center;
+              padding-block: 1rem;
+              font-size: 16px;}
+
+    div.stars {margin-bottom: 0;}
+
+    h1 {margin-block: 0 2rem;
+        text-align: left;
+        font-size: 3.5rem;
+        line-height: 85%;}
+
+    div#stats {margin-left: auto;
+                width: fit-content;
+                margin-top: 1rem;
+                row-gap: 1.25rem;}
+
+    div#stats div:nth-of-type(2) {margin-left: 2rem;}
+
+    div#stats div:nth-of-type(3) {margin-left: 4rem;}
+
+    div.stars {column-gap: .5rem;}
+
+    div.row:last-of-type {flex-direction: row;
+                          margin-block: 0;
+                          justify-content: space-between;}
+
+    div.review img {height: 42px;}
+
+    div.review {padding-block: 1rem 2rem;
+                padding-inline: 1.75rem;
+                height: fit-content;}
+    
+    div.review p {word-spacing: normal;
+                  width: 275px;}
+    div.review:nth-of-type(2) {margin-top: 2rem;}
+
+    div.review:nth-of-type(3) {margin-top: 3rem;}
+
+    span.name {font-size: 16px;}
+
+    span.accent {font-size: 16px;
+                 font-weight: var(--font-normal)}
+}
