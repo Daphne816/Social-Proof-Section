@@ -19,7 +19,9 @@
 body {margin: 0;
       font-size: 15px;
       font-family: var(--font-normal);
-      background-image: url(images/bg-pattern-top-mobile.svg);
+      background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+      background-position-x: left, right;
+      background-position-y: top, bottom;
       background-repeat: no-repeat;}
 
 main {padding-inline: 1.5rem;}
