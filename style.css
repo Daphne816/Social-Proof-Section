@@ -135,7 +135,7 @@ footer {margin-block: .5rem;}
         text-align: left;
         font-size: 3.5rem;
         line-height: 85%;
-        letter-spacing: .3px;}
+        letter-spacing: -3px;}
 
     div#stats {margin-left: auto;
                 width: fit-content;
