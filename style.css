@@ -162,7 +162,8 @@ footer {margin-block: .5rem;}
                 height: fit-content;}
     
     div.review p {word-spacing: normal;
-                  width: 275px;}
+                  min-width: 275px;}
+    
     div.review:nth-of-type(2) {margin-top: 2rem;}
 
     div.review:nth-of-type(3) {margin-top: 3rem;}
