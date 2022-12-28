@@ -82,7 +82,7 @@ div.review p {color: var(--clr-White);
               font-weight: var(--font-normal);
               word-spacing: 1px;
               line-height: 130%;
-              width: 265px;
+              min-width: 265px;
               margin-bottom: 0;}
 
 div.head {display: flex;
@@ -164,7 +164,7 @@ footer {margin-block: .5rem;}
                 height: fit-content;}
     
     div.review p {word-spacing: normal;
-                  min-width: 275px;}
+                  width: 275px;}
     
     div.review:nth-of-type(2) {margin-top: 2rem;}
 
