@@ -134,7 +134,8 @@ footer {margin-block: .5rem;}
     h1 {margin-block: 0 2rem;
         text-align: left;
         font-size: 3.5rem;
-        line-height: 85%;}
+        line-height: 85%;
+        letter-spacing: .3px;}
 
     div#stats {margin-left: auto;
                 width: fit-content;
